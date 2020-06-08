@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.footer-container {
+    display: flex;
+    min-width: 100%;
+    min-height: 250px;
+    background-color: $grey;
+}
