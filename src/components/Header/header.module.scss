@@ -7,6 +7,9 @@
     flex-direction: row;
     box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.1);
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
 };
 
 .nav-list {
