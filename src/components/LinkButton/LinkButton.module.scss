@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.link {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    position: relative;
+    color: $grey;
+    transition: all 0.5s ease;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 3px;
+        background-color: $choco;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        z-index: 10;
+    }
+
+    &:hover,
+    &:focus {
+        color: $choco;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}

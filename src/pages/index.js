@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import HeroScreen from "../components/HeroScreen";
+import BlogCard from "../components/BlogCard/index";
 
 const IndexPage = () => (
   <Layout>
@@ -60,6 +61,12 @@ const IndexPage = () => (
          я смогу сориентировать вас по длительности терапии.  </p>
       <b>Первичная консультация длится 30 минут и бесплатна для вас.</b>
     </section>
+
+    <BlogCard 
+      dateShort='14 Aug'
+      introText='Lorem ipsum dolor sim amet orem ipsum dolor sim amet orem ipsum dolor sim amet'
+      heading='My first blog-post'
+    />
 
     <section>
       <h2 className="h3-text">Узнаете себя?</h2>

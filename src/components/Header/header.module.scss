@@ -10,16 +10,24 @@
     position: sticky;
     top: 0px;
     background-color: #ffffff;
+    z-index: 20;
 };
 
 .nav-list {
     display: flex;
+    flex-direction: column;
     list-style-type: none;
     margin: 0;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .nav-item {
-    margin-left: 1.2rem;
+    @media (min-width: 768px) {
+        margin-left: 1.2rem;    
+    }
 }
 
 .nav-link {
@@ -30,6 +38,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Montserrat';
+    font-size: 0.8rem;
     letter-spacing: 1.5;
     transition: all 0.3s ease;
 
