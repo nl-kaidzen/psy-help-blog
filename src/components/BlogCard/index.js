@@ -9,15 +9,18 @@ const BlogCard = ({ dateShort, introText, heading }) => {
             <div className={styles.imgContainer}>
                 <span className={styles.imgBadge}>{dateShort}</span>
             </div>
-            <ul className={styles.hashContainer}>
-                <li>#Психология</li>
-                <li>#Мотивация</li>
-                <li>#Отношения</li>
-            </ul>
-            <h2 className={styles.heading}>{heading}</h2>
-            <p>{introText}</p>
+            <div className={styles.infoContainer}>
+                <h2 className={styles.heading}>{heading}</h2>
+                <p>{introText}</p>  
+                <ul className={styles.hashContainer}>
+                    <li className={styles.hashItem}>#Психология</li>
+                    <li className={styles.hashItem}>#Мотивация</li>
+                    <li className={styles.hashItem}>#Отношения</li>
+                </ul>  
+            </div>
         </div>
     )
 }
 
 export default BlogCard;
+  
